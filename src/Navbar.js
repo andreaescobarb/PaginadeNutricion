@@ -31,7 +31,7 @@ export default class Example extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="fixed" light expand="md">
+                <Navbar color="light" light expand="md">
                     <NavbarBrand href="/"><img src={logonutricion} height="100" alt="logonutricion"/></NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
@@ -44,19 +44,16 @@ export default class Example extends React.Component {
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
-                                    Options
+                                    Redes Sociales
                 </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
-                                        Option 1
+                                        Facebook
                   </DropdownItem>
                                     <DropdownItem>
-                                        Option 2
+                                        Instagram
                   </DropdownItem>
                                     <DropdownItem divider />
-                                    <DropdownItem>
-                                        Reset
-                  </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </Nav>
