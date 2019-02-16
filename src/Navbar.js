@@ -48,10 +48,14 @@ export default class Example extends React.Component {
                 </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
-                                        Facebook
+                                        <NavItem>
+                                <NavLink href="https://www.facebook.com/luciaescobarnutricionista/">Facebook</NavLink>
+                            </NavItem>
                   </DropdownItem>
                                     <DropdownItem>
-                                        Instagram
+                                    <NavItem>
+                                <NavLink href="https://www.instagram.com/luciaescobarnutricionista/?hl=es-la">Instagram</NavLink>
+                            </NavItem>
                   </DropdownItem>
                                     <DropdownItem divider />
                                 </DropdownMenu>
