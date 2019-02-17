@@ -7,28 +7,30 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
+  CarouselProps
 } from 'reactstrap';
 
 const items = [
   {
     src: icon2,  
     altText: 'Slide 1',
-    caption: 'Slide '
+    caption: '',
+    color: 'dark'
   },
   {
     src: icon1,
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: ''
   },
   {
     src: icon3,
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: ''
   }
 ];
 
-class Example extends Component {
+class Car extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -75,7 +77,7 @@ class Example extends Component {
           key={item.src}
         >
           <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <CarouselCaption captionText={item.caption} captionHeader={item.caption}/>
         </CarouselItem>
       );
     });
@@ -96,4 +98,4 @@ class Example extends Component {
 }
 
 
-export default Example;
+export default Car;
