@@ -11,7 +11,7 @@ const Example = (props) => {
           <Card body style={{ background: '#64FE2E' }}>
             <CardTitle style={{ color: 'purple', fontSize: '150%' }}>Plan Nutricional</CardTitle>
             <CardText>Incluye comidas de tres tiempos + meriendas y recetas de como preparar los alimentos</CardText>
-            <Button>COMPRAR</Button>
+            <Button onClick={Compra}>COMPRAR</Button>
           </Card>
         </Col>
         <Col sm="4">
@@ -32,5 +32,9 @@ const Example = (props) => {
     </Container>
   );
 };
+
+function Compra(){
+  alert("Su compra fue realizada con exito!");
+}
 
 export default Example;
