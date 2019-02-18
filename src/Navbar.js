@@ -38,7 +38,7 @@ export default class Example extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About      </Link>
+                                <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About&nbsp;</Link>
                             </NavItem>
                             <NavItem>
                             <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About &nbsp;</Link>
