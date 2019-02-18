@@ -15,13 +15,13 @@ const items = [
   {
     src: icon2,  
     altText: 'Slide 1',
-    caption: '',
+    caption: 'Aprenda a comer saludable sin restricciones',
     color: 'dark'
   },
   {
     src: icon1,
     altText: 'Slide 2',
-    caption: ''
+    caption: 'Aprenda a comer saludable sin restricciones'
   },
   {
     src: icon3,
@@ -77,7 +77,7 @@ class Car extends Component {
           key={item.src}
         >
           <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption}/>
+          <CarouselCaption style={{fontSize:'300%'}} captionHeader={item.caption}/>
         </CarouselItem>
       );
     });

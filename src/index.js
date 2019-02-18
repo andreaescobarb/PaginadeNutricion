@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import icon from './favicon.png'
 import App from './App';
-import Favicon from 'react-favicon';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import * as serviceWorker from './serviceWorker';
 
