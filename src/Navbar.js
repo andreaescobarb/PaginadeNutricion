@@ -13,6 +13,7 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -37,10 +38,10 @@ export default class Example extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink style={{color:'black'}} href="/components/">Components</NavLink>
+                                <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About      </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink style={{color:'black'}} href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About &nbsp;</Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle style={{color:'black'}} nav caret>

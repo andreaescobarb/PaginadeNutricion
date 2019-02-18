@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import icon1 from './running.jpg';
-import icon2 from './healthy.png';
+import icon2 from './weightloss.jpg';
 import icon3 from './wellness.jpg';
 import {
   Carousel,
@@ -21,7 +21,7 @@ const items = [
   {
     src: icon1,
     altText: 'Slide 2',
-    caption: 'Aprenda a comer saludable sin restricciones'
+    caption: 'Sea una persona activa fisicamente'
   },
   {
     src: icon3,
