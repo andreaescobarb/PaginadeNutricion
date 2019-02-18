@@ -17,7 +17,7 @@ class About extends Component {
                         Trabajo en el Programa Mundial de Alimentos (PMA) para ayudar a los niños con 
                         desnutrición. Por placer tengo mi consultorio donde pueden hacer una cita más 
                         personalizada, donde pueden contactarme por medio de mi página web o por medio
-                        de mis redes sociales
+                        de mis redes sociales.
                         <br/>
 
                     </p>
