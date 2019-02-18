@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import imgcurriculum from "./cvpic.jpg";
 import { Container } from 'reactstrap';
 import Navbar from './Navbar.js';
-//import './About.css';
 
 class About extends Component {
     render() {
