@@ -31,30 +31,30 @@ export default class Example extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/"><img src={logonutricion} height="100" alt="logonutricion"/></NavbarBrand>
+                <Navbar color="white" light expand="md">
+                    <NavbarBrand href="/"><img src={logonutricion} height="85" alt="logonutricion"/></NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
+                                <NavLink style={{color:'black'}} href="/components/">Components</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                <NavLink style={{color:'black'}} href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
+                                <DropdownToggle style={{color:'black'}} nav caret>
                                     Redes Sociales
                 </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem>
                                         <NavItem>
-                                <NavLink href="https://www.facebook.com/luciaescobarnutricionista/">Facebook</NavLink>
+                                <NavLink style={{color:'black'}} href="https://www.facebook.com/luciaescobarnutricionista/">Facebook</NavLink>
                             </NavItem>
                   </DropdownItem>
                                     <DropdownItem>
                                     <NavItem>
-                                <NavLink href="https://www.instagram.com/luciaescobarnutricionista/?hl=es-la">Instagram</NavLink>
+                                <NavLink style={{color:'black'}} href="https://www.instagram.com/luciaescobarnutricionista/?hl=es-la">Instagram</NavLink>
                             </NavItem>
                   </DropdownItem>
                                     <DropdownItem divider />

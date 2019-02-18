@@ -5,8 +5,15 @@ import icon from './favicon.png'
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import * as serviceWorker from './serviceWorker';
+import Routes from './Routes';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
-ReactDOM.render(<App /> ,
+ReactDOM.render(
+    <HashRouter>
+        <Routes/>
+    </HashRouter>
+    ,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

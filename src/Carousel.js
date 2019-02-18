@@ -26,7 +26,7 @@ const items = [
   {
     src: icon3,
     altText: 'Slide 3',
-    caption: ''
+    caption: 'Alcance la plenitud con un estilo de vida saludable'
   }
 ];
 

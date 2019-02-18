@@ -1,11 +1,3 @@
 .card{
-font-family: monospace;
-color: limegreen;
-background-color: blue;
-}
-.card .body{
-    color: aquamarine;
-}
-.button{
-    color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
