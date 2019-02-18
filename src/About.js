@@ -16,7 +16,7 @@ class About extends Component {
                     <p>Mi nombre es Lucía Escobar, soy licenciada en nutrición y fitness enthusiast.
                         Trabajo en el Programa Mundial de Alimentos (PMA) para ayudar a los niños con 
                         desnutrición. Por placer tengo mi consultorio donde pueden hacer una cita más 
-                        personalizada, donde pueden contactarme por medio de mi página web o por medio
+                        personalizada, y pueden contactarme por medio de mi página web o por medio
                         de mis redes sociales.
                         <br/>
 

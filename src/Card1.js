@@ -33,8 +33,10 @@ const Example = (props) => {
   );
 };
 
+//funcion que e muestra que la compre
 function Compra(){
   alert("Su compra fue realizada con exito!");
+
 }
 
 export default Example;
