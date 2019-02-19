@@ -62,7 +62,7 @@ export default class SignInForm extends React.Component {
                                 <br/><br/>
                                 <FormGroup check row>
                                     <Col sm={{ size: 10, offset: 0 }}>
-                                        <Button>Confirmar</Button>
+                                        <Button onClick='alert'>Confirmar</Button>
                                     </Col>
                                 </FormGroup>
                                 <br /><br />
