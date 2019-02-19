@@ -15,7 +15,7 @@ const Example = (props) => {
                             hipertension, insuficiencia renal y muchas mas.
                      </p>
                         <p className="lead">
-                            <Button color="primary">Agendar </Button>
+                            <Button color="primary" onClick={Agendar}>Agendar </Button>
                         </p>
                     </Jumbotron>
                 </Container>
@@ -25,3 +25,8 @@ const Example = (props) => {
 };
 
 export default Example;
+
+function Agendar(){
+    alert("Se ha agendado su cita!");
+  
+  }
