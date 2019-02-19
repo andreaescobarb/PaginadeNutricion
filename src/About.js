@@ -6,10 +6,12 @@ import Navbar from './Navbar.js';
 class About extends Component {
     render() {
         return (
-            <div className="About" >
-            <Navbar style={{padding:'200px'}}></Navbar>
-                <img src={imgcurriculum} alt="hola" height="500" align="left" />
-                <Container style={{backgroundColor:'#FFBF00', width:'700px'}} >
+            <div className="About">
+            <Navbar style={{padding:'100px'}}></Navbar>
+                <br/>
+                <img src={imgcurriculum} alt="hola" height="550" align="left" style={{padding:'20px'}} />
+                <br/>
+                <Container style={{backgroundColor:'#FFBF00', width:'400px', padding:'50px'}} >
                 <br/>
                 <h1>About Me</h1>
                     <h2>Lucía Escobar</h2>
@@ -19,7 +21,6 @@ class About extends Component {
                         personalizada, y pueden contactarme por medio de mi página web o por medio
                         de mis redes sociales.
                         <br/>
-
                     </p>
                     <br/>
                 </Container>

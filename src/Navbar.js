@@ -41,7 +41,7 @@ export default class Example extends React.Component {
                                 <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About&nbsp;</Link>
                             </NavItem>
                             <NavItem>
-                            <Link style={{color:'black', font:'bold'}} to={"/Consulta.js/"}>About &nbsp;</Link>
+                            <Link style={{color:'black', font:'bold'}} to={"/Consulta.js/"}>Consulta &nbsp;</Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle style={{color:'black'}} nav caret>
