@@ -9,8 +9,31 @@ import {
     FormText,
     Container
 } from "reactstrap";
+import fire from './Fire';
+import firebase from "firebase";
+
+const firebaseAuthKey = "firebaseAuthInProgress";
 //import NavBar from './NavBar.js';
 export default class SignInForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
+    }
+    handleGoogleLogin() {
+        let provider = new firebase.auth.GoogleAuthProvider();
+        provider.addScope("profile");
+        provider.addScope("email");
+        fire
+            .auth()
+            .signInWithPopup(provider)
+            .then(result => {
+                console.log(result);
+            });
+    }
+    handleChange(e) {
+        this.setState({ [e.target.name]: e.target.value });
+        console.log(e.target.value);
+    }
     render() {
         return (
             <div>
@@ -18,51 +41,10 @@ export default class SignInForm extends React.Component {
                     <Container style={{ background: 'orange' }}>
                         <div style={{ border: 'thin', display: 'flex', justifyContent: 'center' }}>
                             <Form>
-                                <br /> <br />
-                                <FormGroup row>
-                                    <Label for="Nombre" sm={4}>
-                                        Nombre
-              </Label>
-                                    <Col sm={8}>
-                                        <Input
-                                            type="nombre"
-                                            name="nombre"
-                                            id="nombre"
-                                            placeholder="Ingrese su nombre"
-                                        />
-                                    </Col>
-                                </FormGroup>
-                                <FormGroup row>
-                                    <Label for="Apellido" sm={4}>
-                                        Apellido
-              </Label>
-                                    <Col sm={8}>
-                                        <Input
-                                            type="apellido"
-                                            name="apellido"
-                                            id="apellido"
-                                            placeholder="Ingrese su Apellido"
-                                        />
-                                    </Col>
-                                </FormGroup>
-                                <FormGroup row>
-                                    <Label for="Correo" sm={4}>
-                                        Correo
-              </Label>
-                                    <Col sm={8}>
-                                        <Input
-                                            type="correo"
-                                            name="correo"
-                                            id="correo"
-                                            placeholder="Ingrese su Correo"
-                                        />
-                                    </Col>
-                                </FormGroup>
-                                
-                                <br/><br/>
+                                <br /><br />
                                 <FormGroup check row>
                                     <Col sm={{ size: 10, offset: 0 }}>
-                                        <Button color="primary" onClick={Cita}>Confirmar</Button>
+                                        <Button color="primary" onClick={this.handleGoogleLogin}>Iniciar Sesion con Google</Button>
                                     </Col>
                                 </FormGroup>
                                 <br /><br />
@@ -74,7 +56,7 @@ export default class SignInForm extends React.Component {
         );
     }
 }
-function Cita(){
+function Cita() {
     alert("Sus datos personales han sido registrado con exito!");
-  
-  }
+
+}

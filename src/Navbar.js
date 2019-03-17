@@ -1,6 +1,7 @@
 import React from 'react';
 import logonutricion from './logonutricion.PNG';
 import {
+    Button,
     Collapse,
     Navbar,
     NavbarToggler,
@@ -14,6 +15,8 @@ import {
     DropdownItem
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
+import fire from './Fire';
+
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -29,6 +32,14 @@ export default class Example extends React.Component {
             isOpen: !this.state.isOpen
         });
     }
+    signOutUser = async () => {
+        try {
+          await fire.auth().signOut();
+          console.log("Logged Out");
+        } catch (e) {
+          console.log(e);
+        }
+      };
     render() {
         return (
             <div>
@@ -37,6 +48,7 @@ export default class Example extends React.Component {
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
+                            <NavItem><Button onClick={this.signOutUser}>Logout</Button></NavItem>
                             <NavItem>
                                 <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About&nbsp;</Link>
                             </NavItem>
