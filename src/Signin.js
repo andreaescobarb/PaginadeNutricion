@@ -4,15 +4,13 @@ import {
     Button,
     Form,
     FormGroup,
-    Label,
-    Input,
-    FormText,
     Container
 } from "reactstrap";
 import fire from './Fire';
 import firebase from "firebase";
 
 const firebaseAuthKey = "firebaseAuthInProgress";
+
 //import NavBar from './NavBar.js';
 export default class SignInForm extends React.Component {
     constructor(props) {
@@ -34,6 +32,7 @@ export default class SignInForm extends React.Component {
         this.setState({ [e.target.name]: e.target.value });
         console.log(e.target.value);
     }
+    
     render() {
         return (
             <div>
