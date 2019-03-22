@@ -4,7 +4,6 @@ import './Card1.css';
 import {Link} from 'react-router-dom';
 import { Container, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Forms from './Forms';
-import NavBar from './Navbar';
 
 const Example = (props) => {
   return (
@@ -14,21 +13,21 @@ const Example = (props) => {
           <Card body style={{ background: '#64FE2E' }}>
             <CardTitle style={{ color: 'purple', fontSize: '150%' }}>Plan Nutricional</CardTitle>
             <CardText>Incluye comidas de tres tiempos + meriendas y recetas de como preparar los alimentos</CardText>
-            <Button color="primary" ><Link to={"/Forms.js/"}>Comprar</Link></Button>
+            <Button color="light" ><Link to={"/Forms.js/"}>COMPRAR</Link></Button>
           </Card>
         </Col>
         <Col sm="4">
           <Card body style={{ background: '#FF8000' }}>
             <CardTitle style={{ color: 'purple', fontSize: '150%' }}>Fitness Workouts</CardTitle>
             <CardText>Incluye como entrenar en casa + como entrenar cada parte del cuerpo + entrenamientos en gimnasio</CardText>
-            <Button color="primary" onClick={Compra}>COMPRAR</Button>
+            <Button color="light"> <Link to={"/Forms.js/"}>COMPRAR</Link></Button>
           </Card>
         </Col>
         <Col sm="4">
           <Card body style={{ background: '#FFBF00' }}>
             <CardTitle style={{ color: 'purple', fontSize: '150%' }}>Plan Nutricion + Fitness Workouts</CardTitle>
             <CardText>Incluye el plan nutricional + el plan fitness workout + aprender a comer a conciencia</CardText>
-            <Button color="primary" onClick={Compra}>COMPRAR</Button>
+            <Button color="light"> <Link to={"/Forms.js/"}>COMPRAR</Link></Button>
           </Card>
         </Col>
       </Row>
@@ -37,9 +36,6 @@ const Example = (props) => {
 };
 
 //funcion que e muestra que la compre
-function Compra(){
-  alert("Su compra fue realizada con exito!");
 
-}
 
 export default Example;
