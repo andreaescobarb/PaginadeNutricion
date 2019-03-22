@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "y",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -12,5 +12,9 @@
   },
   "storage": {
     "rules": "storage.rules"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexed.json"
   }
 }

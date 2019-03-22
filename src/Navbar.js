@@ -48,7 +48,7 @@ export default class Example extends React.Component {
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
-                            <NavItem><Button onClick={this.signOutUser}>Logout</Button></NavItem>
+                            {/*<NavItem><Button onClick={this.signOutUser}>Logout</Button></NavItem>*/}
                             <NavItem>
                                 <Link style={{color:'black', font:'bold'}} to={"/About.js/"}>About&nbsp;</Link>
                             </NavItem>

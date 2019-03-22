@@ -1,7 +1,10 @@
 
 import React from 'react';
 import './Card1.css';
+import {Link} from 'react-router-dom';
 import { Container, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import Forms from './Forms';
+import NavBar from './Navbar';
 
 const Example = (props) => {
   return (
@@ -11,7 +14,7 @@ const Example = (props) => {
           <Card body style={{ background: '#64FE2E' }}>
             <CardTitle style={{ color: 'purple', fontSize: '150%' }}>Plan Nutricional</CardTitle>
             <CardText>Incluye comidas de tres tiempos + meriendas y recetas de como preparar los alimentos</CardText>
-            <Button color="primary" onClick={Compra}>COMPRAR</Button>
+            <Button color="primary" ><Link to={"/Forms.js/"}>Comprar</Link></Button>
           </Card>
         </Col>
         <Col sm="4">
